@@ -112,7 +112,7 @@ function startTimerBack(){
         if(time == 0) {
             document.body.style.backgroundColor = 'red';
             clearInterval(timer1);
-            grth();
+            flash();
         }
 
     },100);
