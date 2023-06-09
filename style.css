@@ -7,7 +7,15 @@ p {
     border-color: black;
     
 }
-
+.first_row{
+    width: 70%;
+    margin: 4% 0% 2% 35%;
+}
 td {
+    text-align: center;
     color: white;
+}
+table{
+    width: 70%;
+    margin: 3% 5% 15% 15%;
 }
