@@ -1,0 +1,13 @@
+p {
+    font-size:12px;
+}
+ tr, th, td, table {
+    border-style: double;
+    background-color: white;
+    border-color: black;
+    
+}
+
+td {
+    color: white;
+}
