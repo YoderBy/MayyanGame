@@ -9,13 +9,19 @@ p {
 }
 .first_row{
     width: 70%;
-    margin: 4% 0% 2% 35%;
+    margin: 4% 0% 2% 15%;
+}
+button{
+    margin-right:20px;
+    width: 100px;
+    height: 100px;
 }
 td {
     text-align: center;
     color: white;
 }
 table{
+    height: 1050px;
     width: 70%;
     margin: 3% 5% 15% 15%;
 }
