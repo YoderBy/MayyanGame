@@ -1,25 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <script src = 'javascript.js'></script>
-    <title>המשחק של מעיין</title>
 
-    
+<head>
+    <link rel="stylesheet" href="Style13-06.css">
+    <script src='javascript13-06.js'></script>
+    <title>memory card game</title>
+
+
 
 </head>
+
 <body>
+    <div class="main">
 
 
-<div class = "first_row">
-    <p id = "timer1">2500</p>
-    <input placeholder="Enter Text" id ="text_to_add">
-    <button onclick="generateTable(4,4)">4x4</button>
-    <button onclick="generateTable(6,6)">6x6</button>
-    <button onclick="generateTable(8,8)">8x8</button>
-    <button onclick="startTimerBack()">Start</button>
-</div>
-    <table id = "game_table">
-    </table>
+        <div class="left_part">
+            <div class="button_box">
+                <button onclick="generateTable(4,4)">4x4</button>
+                <button onclick="generateTable(6,6)">6x6</button>
+                <button onclick="generateTable(8,8)">8x8</button>
+            </div>
+
+            <div class="timer">
+                <p id="timer1">1500</p>
+                <button onclick="startTimerBack()">Start timer</button>
+            </div>
+        </div>
+
+        <div class="middle_part">
+            <div>
+                <table id="game_table">
+                </table>
+            </div>
+
+        </div>
+
+        <div class="right_part">
+
+            <div class="radio-input-wrapper">
+                <label class="label">
+                    <input value="value-2" name="value-radio" id="value-2" class="radio-input" type="radio">
+                    <div class="radio-design"></div>
+                    <div class="label-text"> MATCH 2 CARDS </div>
+                </label>
+                <label class="label">
+                    <input value="value-3" name="value-radio" id="value-3" class="radio-input" type="radio">
+                    <div class="radio-design"></div>
+                    <div class="label-text"> MATCH 3 CARDS</div>
+                </label>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
 </body>
+
 </html>
