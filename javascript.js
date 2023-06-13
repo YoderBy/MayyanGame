@@ -55,10 +55,11 @@ function generateTable(row_num, col_num) {
             new_col = document.createElement('td');
             new_col.setAttribute('solved', 'false');
             new_img = document.createElement('img');
-            new_img.src =  `https://placekitten.com/${img_w}/${img_h}`;
             rnd = Math.floor(Math.random() * 10);
-            var img_w = 68 + rnd;
-            var img_h = 108 + rnd;
+            var img_w = 68 + rnd*5;
+            var img_h = 108 + rnd*5;
+            new_img.src =  `https://placekitten.com/${img_w}/${img_h}`;
+
 
             new_img.style.opacity = 0;
             new_col.appendChild(new_img);
