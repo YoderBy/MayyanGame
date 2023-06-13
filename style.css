@@ -1,29 +1,137 @@
-p {
-    font-size:22px;
+
+.main {
+    display: flex;
+    align-items: stretch;
 }
- tr, th, td, table {
+
+
+tr, th, td, table {
     border-style: double;
     background-color: white;
-    border-color: black;
+    border-color: #435b45;
+    border-style: solid;
+}
+
+
+th, td {
+    height: 100px;
+    width: 60px;
     
 }
-.first_row{
-    width: 70%;
-    margin: 4% 0% 2% 15%;
-}
-button{
-    font-size:20px;
-    margin-right:20px;
-    width: 100px;
-    height: 100px;
-}
+
+
 td {
-    font-size:30px;
-    text-align: center;
     color: white;
+    text-align: center;
 }
-table{
-    height: 1050px;
-    width: 70%;
-    margin: 3% 5% 15% 15%;
+
+
+body {
+    background-color: #79a47e;
 }
+
+
+
+button {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(145deg, #608a64, #517454);
+    box-shadow: 20px 20px 40px #446146, -20px -20px 40px #71a174;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: large;
+    color: white;
+    
+}
+
+p {
+    font-size: 35px;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.button_box {
+    text-align: center;
+}
+
+.timer{
+    text-align: center;
+}
+
+.left_part{
+margin: 30px;
+}
+.middle_part{
+    margin: 30px;
+}
+.right_part{
+    margin: 30px;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    padding: 15px 15px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  .label:hover,
+  .label:focus-within,
+  .label:active {
+    background: hsla(128, 34%, 27%, 0.14);
+  }
+  
+  .radio-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    z-index: -1;
+  }
+  
+  .radio-design {
+    width: 22px;
+    height: 22px;
+    border-radius: 100px;
+    background: linear-gradient(to right bottom, hsl(142, 35%, 22%), hsl(130, 28%, 29%));
+    position: relative;
+  }
+  
+  .radio-design::before {
+    content: '';
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: hsl(0, 0%, 90%);
+    transform: scale(1.1);
+    transition: .3s;
+  }
+  
+  .radio-input:checked+.radio-design::before {
+    transform: scale(0);
+  }
+  
+  .label-text {
+    color: hsl(0, 0%, 100%);
+    margin-left: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 1000;
+    font-family: 'Arial Black';
+    transition: .3s;
+  }
+  
+  .radio-input:checked~.label-text {
+    color: hsl(142, 35%, 22%);
+  }
+
+  
